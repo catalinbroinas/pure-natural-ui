@@ -2,14 +2,17 @@ import path from 'path';
 import imagemin from 'vite-plugin-imagemin';
 
 export default {
-    base: './',
-    root: path.resolve(__dirname, 'src'),
+    base: '/pure-natural-ui/',
     server: {
-        port: 8080,
-        hot: true
+        port: 5173,
+        open: true
+    },
+    preview: {
+        port: 4173,
+        open: true
     },
     build: {
-        outDir: '../dist',
+        outDir: 'dist',
         emptyOutDir: true,
         rollupOptions: {
             output: {
