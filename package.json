@@ -1,11 +1,12 @@
 {
-  "name": "mdbootstrap-5-vite",
+  "name": "pure-natural-ui",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "start": "vite --open",
+    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --open",
+    "preview": "vite preview",
     "deploy": "git subtree push --prefix dist origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
