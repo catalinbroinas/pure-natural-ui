@@ -1,12 +1,23 @@
-// Colors
-$primary-main: #FBFBFB;
-$primary-light: #E3F2FD;
-$primary-dark: #2962FF;
+// =================================
+//   VARIABLES
+// =================================
 
-$secondary-main: #332D2D;
-$secondary-light: white;
-$secondary-dark: #304FFE;
+// ============== Colors ================
 
-// Fonts
+// Brand 
+$primary-main: #2962FF;
+$primary-alt: #651FFF;
+
+// Background
+$bg-page: #FFFFFF;
+$bg-light: #F8FAFF;
+
+// Text
+$text-primary: #0D1B2A;
+$text-accent: #2962FF;
+$text-secondary: #4B5563;
+
+// ============== Fonts ================
+
 $font-title: "Roboto", Arial, Verdana, sans-serif;
 $font-text: "Open Sans", Verdana, Arial, sans-serif;

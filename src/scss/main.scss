@@ -9,8 +9,9 @@
 // MDBootstrap
 @import 'mdb-overrides.scss';
 
+// Page
 body {
-    background-color: $primary-light;
+   background-color: $bg-page;
 }
 
 // Typography
@@ -26,11 +27,11 @@ body {
 
 // Navbar
 .navbar {
-   background-color: $primary-main;
+   background-color: $bg-light;
    padding: 0.5rem 0 0;
 
    .navbar-toggler {
-      color: $secondary-dark;
+      color: $text-secondary;
       padding: 1rem;
    }
 
@@ -41,7 +42,7 @@ body {
 
    .navbar-title {
       @include title(1.5rem);
-      color: $secondary-dark;
+      color: $text-secondary;
    }
 
    .navbar-nav {
@@ -63,7 +64,7 @@ body {
    .navbar-brand::after,
    .nav-link::after {
       content: '';
-      @include nav-item-border($secondary-dark, 0px, 50%);
+      @include nav-item-border($text-secondary, 0px, 50%);
    }
 
    .navbar-brand:hover::after,
