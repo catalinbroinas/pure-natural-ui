@@ -90,14 +90,14 @@ body {
 // Hero section
 .hero {
   position: relative;
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: linear-gradient(
     135deg,
     rgba($primary-main, 0.05) 0%,
     rgba($primary-alt, 0.08) 100%
   );
 
-  @include media-breakpoint-down(md) { padding: 4rem 0; }
+  @include media-breakpoint-down(md) { padding: 3rem 0; }
 
   // Text
   &__title {
@@ -113,14 +113,6 @@ body {
     @include text();
     max-width: 480px;
     line-height: 1.6;
-  }
-
-  &__image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0.95;
-    transform: translateY(10px);
   }
 
   .btn-primary-custom {
