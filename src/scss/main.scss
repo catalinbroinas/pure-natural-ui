@@ -86,3 +86,55 @@ body {
       }
    }
 }
+
+// Hero section
+.hero {
+  position: relative;
+  padding: 6rem 0;
+  background: linear-gradient(
+    135deg,
+    rgba($primary-main, 0.05) 0%,
+    rgba($primary-alt, 0.08) 100%
+  );
+
+  @include media-breakpoint-down(md) { padding: 4rem 0; }
+
+  // Text
+  &__title {
+    @include custom-text(700, 2.5rem, $text-primary);
+    letter-spacing: -0.02em;
+  }
+
+  &__subtitle {
+    @include custom-text(600, 1.25rem, $text-accent);
+  }
+
+  &__text {
+    @include text();
+    max-width: 480px;
+    line-height: 1.6;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.95;
+    transform: translateY(10px);
+  }
+
+  .btn-primary-custom {
+    background-color: $primary-main;
+    color: $bg-page;
+    border: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover,
+    &:active {
+      background-color: $primary-alt;
+      color: $bg-page;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba($primary-alt, 0.25);
+    }
+  }
+}
