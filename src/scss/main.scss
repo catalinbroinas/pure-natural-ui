@@ -42,7 +42,7 @@ body {
 
    .navbar-title {
       @include title(1.5rem);
-      color: $text-secondary;
+      color: $text-accent;
    }
 
    .navbar-nav {
@@ -64,7 +64,7 @@ body {
    .navbar-brand::after,
    .nav-link::after {
       content: '';
-      @include nav-item-border($text-secondary, 0px, 50%);
+      @include nav-item-border($text-accent, 0px, 50%);
    }
 
    .navbar-brand:hover::after,
