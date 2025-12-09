@@ -137,3 +137,34 @@ body {
     }
   }
 }
+
+// Components
+.card-product {
+  background-color: $bg-light;
+
+  &__card-header {
+    padding: 1.1rem 1.5rem 0.75rem;
+    text-align: center;
+  }
+
+  &__card-title {
+    @include custom-text(600, 1.35rem, $text-primary);
+    letter-spacing: 0.3px;
+    margin: 0;
+  }
+
+  &__card-subtitle {
+    @include custom-text(500, 1.1rem, $text-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  &__card-text {
+    @include custom-text(400, 1rem, $text-secondary);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  &__mask {
+   background-color: hsla(217, 89%, 51%, 0.15);
+  }
+}
