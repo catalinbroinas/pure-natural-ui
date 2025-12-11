@@ -195,6 +195,25 @@ body {
   }
 }
 
+.card-about {
+  background-color: rgba($bg-accent, 0.5);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 12px 28px rgba($primary-main, 0.12);
+  transform: translateX(-10%);
+
+  &__card-title {
+    @include custom-text(600, 1.5rem, $text-accent-dark);
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__card-text {
+    @include custom-text(400, 1rem, $text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+}
+
 // Styles
 .scroll-margin {
    scroll-margin-top: 100px;
