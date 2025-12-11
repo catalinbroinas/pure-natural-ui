@@ -141,6 +141,8 @@ body {
 // Components
 .card-product {
   background-color: $bg-light;
+  border: 1px solid rgba($bg-accent, 0.1);
+  transition: box-shadow 0.3s ease;
 
   &__card-header {
     padding: 1.1rem 1.5rem 0.75rem;
@@ -182,6 +184,14 @@ body {
 
   &__mask {
    background-color: hsla(217, 89%, 51%, 0.15);
+  }
+
+  &:hover {
+    box-shadow: 0 10px 24px rgba($primary-main, 0.10);
+  }
+
+  &:focus-within {
+    box-shadow: 0 0 0 3px rgba($primary-main, 0.2);
   }
 }
 
