@@ -170,6 +170,7 @@ body {
 
   &__card-subtitle {
     @include custom-text(600, 1.1rem, $text-accent);
+    letter-spacing: 1px;
     margin: 0;
   }
 
