@@ -154,7 +154,7 @@ body {
    align-items: center;
    justify-content: center;
    background-color: $bg-accent;
-   color: $text-accent;
+   color: $text-accent-dark;
    padding: 0.5rem 1rem;
    border-radius: 1rem;
    gap: 0.5rem;
@@ -171,7 +171,7 @@ body {
   }
 
   &__card-subtitle {
-    @include custom-text(600, 1.1rem, $text-accent);
+    @include custom-text(600, 1.1rem, $text-accent-dark);
     letter-spacing: 1px;
     margin: 0;
   }

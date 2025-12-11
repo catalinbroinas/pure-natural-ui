@@ -2,6 +2,8 @@
 //   VARIABLES
 // =================================
 
+@use 'sass:color';
+
 // ============== Colors ================
 
 // Brand 
@@ -16,6 +18,7 @@ $bg-accent: #E3F2FD;
 // Text
 $text-primary: #0D1B2A;
 $text-accent: #2962FF;
+$text-accent-dark: color.scale($text-accent, $lightness: -10%);
 $text-secondary: #4B5563;
 $text-light: #fff;
 
