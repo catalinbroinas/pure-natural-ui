@@ -214,6 +214,10 @@ body {
   }
 }
 
+.flex-row-reverse .card-about {
+  transform: translateX(10%);
+}
+
 // Styles
 .scroll-margin {
    scroll-margin-top: 100px;
