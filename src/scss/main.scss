@@ -228,6 +228,46 @@ body {
   @include media-breakpoint-down(lg) { transform: translate(0%, -10%); }
 }
 
+.testimonial {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__card {
+    background-color: $bg-light;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    z-index: 1;
+    text-align: center;
+  }
+
+  &__image {
+    margin: 0 auto;
+    max-width: 100px;
+    border-radius: 0.25rem;
+    z-index: 2;
+    transform: translateY(-20%);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  }
+
+  &__title {
+    @include custom-text(600, 1.35rem, $text-primary);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  &__subtitle {
+    @include custom-text(400, 1rem, $text-accent-dark);
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    @include custom-text(400, 1rem, $text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+}
+
 // Styles
 .scroll-margin {
    scroll-margin-top: 100px;
