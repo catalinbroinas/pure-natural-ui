@@ -229,11 +229,13 @@ body {
 }
 
 .testimonial {
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 
   &__card {
+    height: 100%;
     background-color: $bg-light;
     padding: 1.5rem 1.5rem 4.5rem;
     border-radius: 0.75rem;
