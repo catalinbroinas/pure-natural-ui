@@ -235,7 +235,7 @@ body {
 
   &__card {
     background-color: $bg-light;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 4.5rem;
     border-radius: 0.75rem;
     z-index: 1;
     text-align: center;
@@ -244,9 +244,10 @@ body {
   &__image {
     margin: 0 auto;
     max-width: 100px;
+    height: auto;
     border-radius: 0.25rem;
     z-index: 2;
-    transform: translateY(-20%);
+    transform: translateY(-50%);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
   }
 
@@ -264,7 +265,7 @@ body {
   &__text {
     @include custom-text(400, 1rem, $text-secondary);
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
   }
 }
 
