@@ -447,7 +447,7 @@
           <div class="row justify-content-center g-lg-5 g-4">
             <!-- First Column -->
             <div class="col-md-6 col-sm-8 col-10">
-              <form class="d-flex flex-column gap-4">
+              <form class="contact-form">
                 <!-- Name input -->
                 <div class="form-outline" data-mdb-input-init>
                   <input type="text" id="name" class="form-control" />
@@ -476,6 +476,8 @@
                 <button
                   type="submit"
                   class="btn btn-primary btn-primary-custom"
+                  data-mdb-ripple-init
+                  data-mdb-ripple-color="light"
                 >
                   Send message
                 </button>
@@ -489,18 +491,18 @@
               <div class="row g-lg-5 g-4">
                 <!-- First Column -->
                 <div class="col-lg-6">
-                  <div class="d-flex align-items-center gap-4">
+                  <div class="contact-info">
                     <div class="flex-shrink-0">
-                      <div class="p-3 badge-primary rounded-4">
+                      <div class="badge contact-info__badge">
                         <i
-                          class="fa-solid fa-earth-americas fa-lg text-primary fa-fw"
+                          class="fa-solid fa-earth-americas contact-info__icon"
                         ></i>
                       </div>
                     </div>
 
                     <div class="flex-grow-1">
-                      <p class="fw-bold mb-1">Country</p>
-                      <p class="text-muted m-0">Romania</p>
+                      <p class="contact-info__title">Country</p>
+                      <p class="contact-info__text">Romania</p>
                     </div>
                   </div>
                 </div>
@@ -508,18 +510,18 @@
 
                 <!-- Second Column -->
                 <div class="col-lg-6">
-                  <div class="d-flex align-items-center gap-4">
+                  <div class="contact-info">
                     <div class="flex-shrink-0">
-                      <div class="p-3 badge-primary rounded-4">
+                      <div class="badge contact-info__badge">
                         <i
-                          class="fa-solid fa-location-dot fa-lg text-primary fa-fw"
+                          class="fa-solid fa-location-dot contact-info__icon"
                         ></i>
                       </div>
                     </div>
 
                     <div class="flex-grow-1">
-                      <p class="fw-bold mb-1">Address</p>
-                      <p class="text-muted m-0">Oradea, 410087</p>
+                      <p class="contact-info__title">Address</p>
+                      <p class="contact-info__text">Oradea, 410087</p>
                     </div>
                   </div>
                 </div>
@@ -527,18 +529,18 @@
 
                 <!-- Third Column -->
                 <div class="col-lg-6">
-                  <div class="d-flex align-items-center gap-4">
+                  <div class="contact-info">
                     <div class="flex-shrink-0">
-                      <div class="p-3 badge-primary rounded-4">
+                      <div class="badge contact-info__badge">
                         <i
-                          class="fa-solid fa-phone-flip fa-lg text-primary fa-fw"
+                          class="fa-solid fa-phone-flip contact-info__icon"
                         ></i>
                       </div>
                     </div>
 
                     <div class="flex-grow-1">
-                      <p class="fw-bold mb-1">Phone number</p>
-                      <p class="text-muted m-0">+40 765 000 000</p>
+                      <p class="contact-info__title">Phone number</p>
+                      <p class="contact-info__text">+40 765 000 000</p>
                     </div>
                   </div>
                 </div>
@@ -546,18 +548,16 @@
 
                 <!-- Fourth Column -->
                 <div class="col-lg-6">
-                  <div class="d-flex align-items-center gap-4">
+                  <div class="contact-info">
                     <div class="flex-shrink-0">
-                      <div class="p-3 badge-primary rounded-4">
-                        <i
-                          class="fa-solid fa-envelope fa-lg text-primary fa-fw"
-                        ></i>
+                      <div class="badge contact-info__badge">
+                        <i class="fa-solid fa-envelope contact-info__icon"></i>
                       </div>
                     </div>
 
                     <div class="flex-grow-1">
-                      <p class="fw-bold mb-1">Email address</p>
-                      <p class="text-muted m-0">catalinbroinas@yahoo.com</p>
+                      <p class="contact-info__title">Email address</p>
+                      <p class="contact-info__text">catalinbroinas@yahoo.com</p>
                     </div>
                   </div>
                 </div>
