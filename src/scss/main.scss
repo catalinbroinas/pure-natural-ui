@@ -282,14 +282,15 @@ body {
 
   .btn-primary.btn-primary-custom {
     background-color: $primary-main;
-    color: $bg-page;
+    color: $text-light;
     border: none;
-    transition: box-shadow 0.25s ease;
+    transition: box-shadow 0.25s ease, background-color 0.25s ease;
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus-visible {
       background-color: $primary-alt;
-      color: $bg-page;
+      color: $text-light;
       box-shadow: 0 6px 12px rgba($primary-alt, 0.25);
     }
   }
