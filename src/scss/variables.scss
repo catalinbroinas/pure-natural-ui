@@ -22,6 +22,17 @@ $text-accent-dark: color.scale($text-accent, $lightness: -10%);
 $text-secondary: #4B5563;
 $text-light: #fff;
 
+// Social brand colors
+$social-colors: (
+  facebook: #3b5998,
+  instagram: #ac2bac,
+  github: #333333,
+  linkedin: #0082ca,
+  youtube: #ed302f,
+  twitter: #55acee,
+  google: #dd4b39
+);
+
 // ============== Fonts ================
 
 $font: "Inter", Arial, sans-serif;

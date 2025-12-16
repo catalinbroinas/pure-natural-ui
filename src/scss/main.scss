@@ -332,3 +332,12 @@ body {
    scroll-margin-top: 100px;
    scroll-behavior: smooth;
 }
+
+// Buttons
+.btn.social-btn {
+  @each $name, $color in $social-colors {
+    &--#{$name} {
+      @include btn-social-media($color);
+    }
+  }
+}
