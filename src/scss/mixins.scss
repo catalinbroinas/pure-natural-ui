@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 // TYpography
 @mixin title($font-size: 2rem) {
     font-family: $font, sans-serif;
@@ -27,7 +29,31 @@
     color: $color;
 }
 
-// Components
+// Buttons
+@mixin btn-social-media($bg-color) {
+    background-color: $bg-color;
+    color: #fff;
+
+    transition:
+    background-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out,
+    transform 0.1s ease-in-out;
+
+    &:hover {
+        background-color: color.scale($bg-color, $lightness: -10%);
+    }
+
+    &:focus-visible {
+        outline: 0;
+        box-shadow: 0 0 0 4px rgba($bg-color, 0.35);
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+// Divider
 @mixin hr-heading($color: black) {
     border: 0.35rem $color solid;
     width: 8vw;
