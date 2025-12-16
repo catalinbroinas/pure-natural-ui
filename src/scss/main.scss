@@ -327,6 +327,18 @@ body {
   }
 }
 
+// Footer
+.footer {
+  &__socials {
+    background-color: $bg-light;
+  }
+
+  &__copyright {
+    background-color: $bg-accent;
+    @include custom-text(400, 1rem, $text-primary);
+  }
+}
+
 // Styles
 .scroll-margin {
    scroll-margin-top: 100px;
