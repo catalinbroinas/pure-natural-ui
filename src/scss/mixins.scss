@@ -33,24 +33,21 @@
 @mixin btn-social-media($bg-color) {
     background-color: $bg-color;
     color: #fff;
+    border: none;
 
     transition:
-    background-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out,
-    transform 0.1s ease-in-out;
+        background-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        transform 0.1s ease-in-out;
 
-    &:hover {
+    &:is(:hover, :focus-visible, :active) {
+        color: #fff;
         background-color: color.scale($bg-color, $lightness: -10%);
+        box-shadow: 0 4px 12px rgba($bg-color, 0.25);
     }
 
-    &:focus-visible {
-        outline: 0;
-        box-shadow: 0 0 0 4px rgba($bg-color, 0.35);
-    }
-
-    &:active {
-        transform: translateY(1px);
-    }
+    &:focus-visible { box-shadow: 0 0 0 3px rgba($bg-color, 0.5); }
+    &:active { transform: translateY(1px); }
 }
 
 // Divider
