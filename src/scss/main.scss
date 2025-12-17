@@ -345,6 +345,11 @@ body {
    scroll-behavior: smooth;
 }
 
+.scroll-hero-margin {
+  scroll-margin-top: 78.4px;
+  scroll-behavior: smooth;
+}
+
 // Buttons
 .btn.social-btn {
   @each $name, $color in $social-colors {
