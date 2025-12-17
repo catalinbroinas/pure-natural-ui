@@ -134,6 +134,7 @@ body {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 
     &:hover,
+    &:focus-visible,
     &:active {
       background-color: $primary-alt;
       color: $bg-page;
