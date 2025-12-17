@@ -2,7 +2,7 @@ import path from 'path';
 import imagemin from 'vite-plugin-imagemin';
 
 export default {
-    base: '/pure-natural-ui/',
+    base: '/',
     server: {
         port: 5173,
         open: true
