@@ -9,9 +9,13 @@
 // MDBootstrap
 @import 'mdb-overrides.scss';
 
-// Page
+// Globals
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-   background-color: $bg-page;
+  background-color: $bg-page;
 }
 
 // Typography
@@ -341,13 +345,11 @@ body {
 
 // Styles
 .scroll-margin {
-   scroll-margin-top: 100px;
-   scroll-behavior: smooth;
+   scroll-margin-top: $navbar-height + 21.6px;
 }
 
 .scroll-hero-margin {
-  scroll-margin-top: 78.4px;
-  scroll-behavior: smooth;
+  scroll-margin-top: $navbar-height;
 }
 
 // Buttons
