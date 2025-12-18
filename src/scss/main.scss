@@ -205,6 +205,8 @@ body {
 // =========== About ===========
 
 .about {
+  @include media-breakpoint-down(sm) { padding-inline: 1.5rem; }
+
   &__card {
     background-color: rgba($bg-accent, 0.5);
     backdrop-filter: blur(20px);
