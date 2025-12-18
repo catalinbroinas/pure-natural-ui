@@ -145,7 +145,13 @@ body {
   }
 }
 
-// Components
+// =========== About ===========
+
+.products {
+  @include media-breakpoint-down(sm) { padding-inline: 1.5rem; }
+}
+
+// Card
 .card-product {
   background-color: $bg-light;
   border: 1px solid rgba($bg-accent, 0.1);
