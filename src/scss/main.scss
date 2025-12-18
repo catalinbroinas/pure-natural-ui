@@ -249,13 +249,16 @@ body {
 
 // =========== Testimonials ===========
 
+.testimonials {
+  @include media-breakpoint-down(sm) { padding-inline: 1.5rem; }
+}
+
+// Card
 .testimonial {
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-
-  @include media-breakpoint-down(sm) { padding-inline: 1.5rem; }
 
   &__card {
     height: 100%;
