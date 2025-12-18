@@ -281,11 +281,15 @@ body {
 // =========== Contact ===========
 
 .contact {
+  @include media-breakpoint-down(sm) { padding-inline: 1.5rem; }
+
   &__form {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
     gap: 1.5rem;
+
+    @include media-breakpoint-up(lg) { padding-inline: 1.5rem; }
+    @include media-breakpoint-down(md) { padding-block: 1rem; }
 
     .btn-primary.btn-primary-custom {
       background-color: $primary-main;
