@@ -202,13 +202,29 @@ body {
   }
 }
 
-.card-about {
-  background-color: rgba($bg-accent, 0.5);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 12px 28px rgba($primary-main, 0.12);
-  transform: translateX(-10%);
-  text-align: left;
-  border-radius: 0.75rem;
+// =========== About ===========
+
+.about {
+  &__card {
+    background-color: rgba($bg-accent, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 12px 28px rgba($primary-main, 0.12);
+    transform: translateX(-10%);
+    text-align: left;
+    border-radius: 0.75rem;
+
+    @include media-breakpoint-down(lg) {
+      border-top-left-radius: 0%;
+      border-top-right-radius: 0%;
+      text-align: center;
+      transform: translate(0%, -10%);
+    }
+  }
+
+  &__card--reverse {
+    transform: translateX(10%);
+    @include media-breakpoint-down(lg) { transform: translate(0%, -10%); }
+  }
 
   &__card-title {
     @include custom-text(600, 1.5rem, $text-accent-dark);
@@ -221,19 +237,9 @@ body {
     line-height: 1.6;
     margin-bottom: 0;
   }
-
-  @include media-breakpoint-down(lg) {
-    border-top-left-radius: 0%;
-    border-top-right-radius: 0%;
-    text-align: center;
-    transform: translate(0%, -10%);
-  }
 }
 
-.flex-lg-row-reverse .card-about {
-  transform: translateX(10%);
-  @include media-breakpoint-down(lg) { transform: translate(0%, -10%); }
-}
+// =========== Testimonials ===========
 
 .testimonial {
   height: 100%;
