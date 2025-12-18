@@ -280,34 +280,34 @@ body {
 
 // =========== Contact ===========
 
-// Forms
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem;
-  gap: 1.5rem;
+.contact {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
 
-  .btn-primary.btn-primary-custom {
-    background-color: $primary-main;
-    color: $text-light;
-    border: none;
-    transition: box-shadow 0.25s ease, background-color 0.25s ease;
-
-    &:hover,
-    &:active,
-    &:focus-visible {
-      background-color: $primary-alt;
+    .btn-primary.btn-primary-custom {
+      background-color: $primary-main;
       color: $text-light;
-      box-shadow: 0 6px 12px rgba($primary-alt, 0.25);
+      border: none;
+      transition: box-shadow 0.25s ease, background-color 0.25s ease;
+
+      &:hover,
+      &:active,
+      &:focus-visible {
+        background-color: $primary-alt;
+        color: $text-light;
+        box-shadow: 0 6px 12px rgba($primary-alt, 0.25);
+      }
     }
   }
-}
 
-// Info
-.contact-info {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
 
   &__badge {
     background-color: $bg-accent;
