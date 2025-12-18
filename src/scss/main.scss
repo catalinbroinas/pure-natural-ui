@@ -102,6 +102,7 @@ body {
     rgba($primary-alt, 0.08) 100%
   );
 
+  @include media-breakpoint-down(lg) { margin-top: $navbar-mobile-height; }
   @include media-breakpoint-down(md) { padding: 3rem 0; }
 
   // Text
@@ -352,6 +353,10 @@ body {
 
 .scroll-hero-margin {
   scroll-margin-top: $navbar-height;
+
+  @include media-breakpoint-down(lg) { 
+    scroll-margin-top: $navbar-mobile-height;
+  }
 }
 
 // Buttons
