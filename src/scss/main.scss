@@ -29,14 +29,6 @@ body {
   @include title;
 }
 
-.sub-title {
-  @include sub-title;
-}
-
-.text {
-  @include text;
-}
-
 // =========== Navbar ===========
 
 .navbar {
