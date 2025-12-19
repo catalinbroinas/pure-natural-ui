@@ -1,3 +1,7 @@
+// =================================
+//   MAIN STYLE
+// =================================
+
 // Variables and mixins
 @import 'variables';
 @import 'mixins';
@@ -9,7 +13,9 @@
 // MDBootstrap
 @import 'mdb-overrides.scss';
 
-// Globals
+// =========== Global styles ===========
+
+// Page
 html {
   scroll-behavior: smooth;
 }
@@ -20,16 +26,19 @@ body {
 
 // Typography
 .title {
-   @include title;
-}
-.sub-title {
-   @include sub-title;
-}
-.text {
-   @include text;
+  @include title;
 }
 
-// Navbar
+.sub-title {
+  @include sub-title;
+}
+
+.text {
+  @include text;
+}
+
+// =========== Navbar ===========
+
 .navbar {
    background-color: $bg-light;
    padding: 0.5rem 0 0;
@@ -91,7 +100,8 @@ body {
    }
 }
 
-// Hero section
+// =========== Hero ===========
+
 .hero {
   position: relative;
   margin-top: $navbar-height;
@@ -145,7 +155,7 @@ body {
   }
 }
 
-// =========== About ===========
+// =========== Products ===========
 
 .products {
   @include media-breakpoint-down(sm) { padding-inline: 1.5rem; }
@@ -357,7 +367,8 @@ body {
   }
 }
 
-// Footer
+// =========== Footer ===========
+
 .footer {
   &__socials {
     background-color: $bg-light;
@@ -369,7 +380,20 @@ body {
   }
 }
 
-// Styles
+// =========== Components ===========
+
+// Buttons
+.btn.social-btn {
+  @each $name, $color in $social-colors {
+    &--#{$name} {
+      @include btn-social-media($color);
+    }
+  }
+}
+
+// =========== Utilities & helpers ===========
+
+// Scroll
 .scroll-margin {
    scroll-margin-top: $navbar-height + 21.6px;
 }
@@ -382,17 +406,7 @@ body {
   }
 }
 
-// Buttons
-.btn.social-btn {
-  @each $name, $color in $social-colors {
-    &--#{$name} {
-      @include btn-social-media($color);
-    }
-  }
-}
-
-// Utilities
-
+// Reset
 .btn-reset {
   @include btn-reset;
 }
