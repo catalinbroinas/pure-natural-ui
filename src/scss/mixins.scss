@@ -75,6 +75,19 @@
     background-color: rgba($color: #ffffff, $alpha: $opacity);
 }
 
+// Utilities
+@mixin btn-reset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    cursor: pointer;
+}
+
 // Animation
 @mixin nav-item-border($bg-color: $primary-main, $width: 0px, $left: 0%) {
     position: absolute;
